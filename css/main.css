@@ -6,7 +6,7 @@
 body{
     margin:0;
     opacity: 1;
-    user-select:auto;
+    /* user-select:auto;
     background-color: var(--lightblue-a);
     background-image: linear-gradient(135deg, var(--lightgreen-b) 25%, transparent 25%),
     linear-gradient(225deg, var(--lightgreen-b) 25%, transparent 25%),
@@ -14,31 +14,38 @@ body{
     linear-gradient(315deg, var(--lightgreen-b) 25%, var(--lightblue-a) 25%);
     background-position: 40px 0, 40px 0, 0 0, 0 0;
     background-size: 40px 40px;
-    background-repeat: repeat;
+    background-repeat: repeat; */
 
     /* background-color: #b9cecd;
     opacity: 1;
-    background: linear-gradient(135deg, #3c605d55 25%, transparent 25%) -25px 0/ 50px 50px,
-     linear-gradient(225deg, #3c605d 25%, transparent 25%) -25px 0/ 50px 50px,
-      linear-gradient(315deg, #3c605d55 25%, transparent 25%) 0px 0/ 50px 50px,
-       linear-gradient(45deg, #3c605d 25%, #b9cecd 25%) 0px 0/ 50px 50px; */
+    background: linear-gradient(135deg, var(--lightgreen-a)55 25%, transparent 25%) -25px 0/ 50px 50px,
+     linear-gradient(225deg, var(--lightgreen-a) 25%, transparent 25%) -25px 0/ 50px 50px,
+      linear-gradient(315deg, var(--lightgreen-a)55 25%, transparent 25%) 0px 0/ 50px 50px,
+       linear-gradient(45deg, var(--lightgreen-a) 25%, #b9cecd 25%) 0px 0/ 50px 50px; */
 
-       /* background:
-      conic-gradient(at 10% 50%,#0000 75%,#3c605d 0),
-      conic-gradient(at 10% 50%,#0000 75%,#3c605d 0) calc(1*25px) calc(3*25px),
-      conic-gradient(at 10% 50%,#0000 75%,#3c605d 0) calc(2*25px) calc(1*25px),
-      conic-gradient(at 10% 50%,#0000 75%,#3c605d 0) calc(3*25px) calc(4*25px),
-      conic-gradient(at 10% 50%,#0000 75%,#3c605d 0) calc(4*25px) calc(2*25px),
-      conic-gradient(at 50% 10%,#0000 75%,#3c605d 0) 0 calc(4*25px),
-      conic-gradient(at 50% 10%,#0000 75%,#3c605d 0) calc(1*25px) calc(2*25px),
-      conic-gradient(at 50% 10%,#0000 75%,#3c605d 0) calc(2*25px) 0,
-      conic-gradient(at 50% 10%,#0000 75%,#3c605d 0) calc(3*25px) calc(3*25px),
-      conic-gradient(at 50% 10%,#0000 75%,#3c605d 0) calc(4*25px) calc(1*25px),
-      #598d89;
-    background-size: 125px 125px; */
+    background:
+    conic-gradient(at 10% 50%,#0000 75%,var(--lightgreen-b) 0),
+    conic-gradient(at 10% 50%,#0000 75%,var(--lightgreen-b) 0) calc(1*32px) calc(3*32px),
+    conic-gradient(at 10% 50%,#0000 75%,var(--lightgreen-b) 0) calc(2*32px) calc(1*32px),
+    conic-gradient(at 10% 50%,#0000 75%,var(--lightgreen-b) 0) calc(3*32px) calc(4*32px),
+    conic-gradient(at 10% 50%,#0000 75%,var(--lightgreen-b) 0) calc(4*32px) calc(2*32px),
+    conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) 0 calc(4*32px),
+    conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) calc(1*32px) calc(2*32px),
+    conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) calc(2*32px) 0,
+    conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) calc(3*32px) calc(3*32px),
+    conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) calc(4*32px) calc(1*32px),
+    var(--lightgreen-a);
+ background-size: 160px 160px;
+ 
+ 
 
     background-attachment: fixed;
     animation: backgroundMovement 5s linear infinite;
+
+    font-family: "Jost", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .side-bar{
@@ -49,15 +56,22 @@ body{
     padding: 1px;
     background-color: var(--white);
     box-sizing:border-box;
+    padding: 40px;
 }
 
 .links-bar{
-    display: flex;
-    width:90%;
+    width:80%;
     flex-flow: row wrap;
     justify-content: space-between;
     border-top: 5px solid var(--lightblue-a);
     border-bottom: 5px solid var(--lightblue-a);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 20px;
+}
+
+ul{
+    list-style-type: none;
 }
 
 .content{
@@ -80,8 +94,8 @@ body{
 
 :root {
     --white: #ffffff;
-    --lightblue-a: #598d89;
-    --lightgreen-b: #3c605d;
+    --lightgreen-a: #94d5a0;
+    --lightgreen-b: #7db387;
     --darkblue-a: #0D5B68;
     --darkblue-b: #0B4A51;
 }
