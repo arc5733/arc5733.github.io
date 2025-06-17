@@ -36,8 +36,8 @@ body{
     conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) calc(4*32px) calc(1*32px),
     var(--lightgreen-a);
  background-size: 160px 160px;
- 
- 
+
+
 
     background-attachment: fixed;
     animation: backgroundMovement 5s linear infinite;
@@ -90,6 +90,59 @@ ul{
     width: 100%;
     padding: 40px;
     border-radius: 25px;
+}
+
+.card-container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card-project{
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 400px;
+    height: auto;
+    background-color: var(--white);
+    padding: 0px 10px 15px 10px;
+    box-sizing: border-box;
+    border-radius: 25px;
+    background-color: var(--lightgreen-a);
+    text-align: left;
+    border: 5px solid var(--lightgreen-a);
+    /* Stuff about transform */
+}
+
+.card-image{
+    width: 100%;
+    height: auto;
+    aspect-ratio: 2 / 1;
+    border-radius: 10% 10% 2% 2%;
+    overflow: clip;
+    border: 10px solid var(--white);
+}
+
+.card-image>img{
+    overflow: clip;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card-bottom{
+    /* display: flex;
+    flex-flow: row nowrap; */
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    padding-top: 15px;
 }
 
 :root {
