@@ -74,6 +74,10 @@ ul{
     list-style-type: none;
 }
 
+a{
+    text-decoration: none;
+}
+
 .content{
     display: flex;
     width: auto;
@@ -126,6 +130,7 @@ ul{
     border-radius: 10% 10% 2% 2%;
     overflow: clip;
     border: 10px solid var(--white);
+    border-image: url(/media/frameTest.png) 100 stretch;
 }
 
 .card-image>img{
@@ -136,11 +141,9 @@ ul{
 }
 
 .card-bottom{
-    /* display: flex;
-    flex-flow: row nowrap; */
+    display: flex;
+    flex-flow: column nowrap;
     justify-content: space-between;
-    align-items: center;
-    gap: 5px;
     padding: 5px;
     padding-top: 15px;
 }
