@@ -24,17 +24,17 @@ body{
        linear-gradient(45deg, var(--lightgreen-a) 25%, #b9cecd 25%) 0px 0/ 50px 50px; */
 
     background:
-    conic-gradient(at 10% 50%,#0000 75%,var(--lightgreen-b) 0),
-    conic-gradient(at 10% 50%,#0000 75%,var(--lightgreen-b) 0) calc(1*32px) calc(3*32px),
-    conic-gradient(at 10% 50%,#0000 75%,var(--lightgreen-b) 0) calc(2*32px) calc(1*32px),
-    conic-gradient(at 10% 50%,#0000 75%,var(--lightgreen-b) 0) calc(3*32px) calc(4*32px),
-    conic-gradient(at 10% 50%,#0000 75%,var(--lightgreen-b) 0) calc(4*32px) calc(2*32px),
-    conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) 0 calc(4*32px),
-    conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) calc(1*32px) calc(2*32px),
-    conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) calc(2*32px) 0,
-    conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) calc(3*32px) calc(3*32px),
-    conic-gradient(at 50% 10%,#0000 75%,var(--lightgreen-b) 0) calc(4*32px) calc(1*32px),
-    var(--lightgreen-a);
+    conic-gradient(at 10% 50%,#0000 75%,var(--darkblue-a) 0),
+    conic-gradient(at 10% 50%,#0000 75%,var(--darkblue-a) 0) calc(1*32px) calc(3*32px),
+    conic-gradient(at 10% 50%,#0000 75%,var(--darkblue-a) 0) calc(2*32px) calc(1*32px),
+    conic-gradient(at 10% 50%,#0000 75%,var(--darkblue-a) 0) calc(3*32px) calc(4*32px),
+    conic-gradient(at 10% 50%,#0000 75%,var(--darkblue-a) 0) calc(4*32px) calc(2*32px),
+    conic-gradient(at 50% 10%,#0000 75%,var(--darkblue-a) 0) 0 calc(4*32px),
+    conic-gradient(at 50% 10%,#0000 75%,var(--darkblue-a) 0) calc(1*32px) calc(2*32px),
+    conic-gradient(at 50% 10%,#0000 75%,var(--darkblue-a) 0) calc(2*32px) 0,
+    conic-gradient(at 50% 10%,#0000 75%,var(--darkblue-a) 0) calc(3*32px) calc(3*32px),
+    conic-gradient(at 50% 10%,#0000 75%,var(--darkblue-a) 0) calc(4*32px) calc(1*32px),
+    var(--darkblue-b);
  background-size: 160px 160px;
 
 
@@ -144,14 +144,22 @@ a{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
+    
     padding: 5px;
     padding-top: 15px;
+}
+
+.card-bottom>h3{
+    margin-top: 5px;
+    margin-bottom: 0;
+    line-height: 20px;
 }
 
 :root {
     --white: #ffffff;
     --lightgreen-a: #94d5a0;
     --lightgreen-b: #7db387;
-    --darkblue-a: #0D5B68;
-    --darkblue-b: #0B4A51;
+    
+    --darkblue-a: #1c5960;
+    --darkblue-b: #257079;
 }
