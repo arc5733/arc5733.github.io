@@ -183,6 +183,7 @@ a{
 
 /* Lid when closed */
 .lid.one {
+  border-top: 100px solid #e0e0bb;
   transform: rotateX(0deg);
   z-index: 3;
   transition-delay: 0.75s;
@@ -218,17 +219,17 @@ a{
   transition: 0.5s;
 }
 
-.project-card:hover .lid.one {
+.envelope-back:hover .lid.one {
     transform: rotateX(90deg);
     transition-delay: 0s;
 }
 
-.project-card:hover .lid.two {
+.envelope-back:hover .lid.two {
     transform: rotateX(180deg);
     transition-delay: 0.25s;
 }
 
-.project-card:hover .letter {
+.envelope-back:hover .letter {
   transform: translateY(-50px);
   transition-delay: 0.5s;
 }
