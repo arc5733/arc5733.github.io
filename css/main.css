@@ -111,7 +111,7 @@ a{
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 400px;
+    width: 250px;
     height: auto;
     background-color: var(--white);
     padding: 0px 10px 15px 10px;
@@ -126,11 +126,11 @@ a{
 .card-image{
     width: 100%;
     height: auto;
-    aspect-ratio: 2 / 1;
+    aspect-ratio: 1 / 1;
     border-radius: 10% 10% 2% 2%;
     overflow: clip;
     border: 10px solid var(--white);
-    border-image: url(/media/frameTest.png) 100 stretch;
+    /* border-image: url(/media/frameTest.png) 100 stretch; */
 }
 
 .card-image>img{
@@ -144,7 +144,8 @@ a{
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-between;
-    
+    align-items: left;
+    gap: 5px;
     padding: 5px;
     padding-top: 15px;
 }
